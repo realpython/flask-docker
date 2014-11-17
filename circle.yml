@@ -13,3 +13,9 @@ test:
     - curl --retry 10 --retry-delay 5 -v http://localhost:80
     - pip install -r requirements.txt
     - python app/tests.py
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - $DEPLOY
